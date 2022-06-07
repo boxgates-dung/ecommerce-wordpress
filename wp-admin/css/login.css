@@ -130,6 +130,7 @@ p {
 }
 
 .login form {
+	border-radius: 10px;
 	margin-top: 20px;
 	margin-left: 0;
 	padding: 26px 24px 34px;
