@@ -95,7 +95,8 @@ html:lang(he-il) .rtl #wpadminbar * {
     width: 100%;
     min-width: 600px;
     z-index: 99999;
-    background: #fff
+    background: #fff;
+    border-bottom: solid 1px #dee1e4;
 }
 
 #wpadminbar .ab-sub-wrapper,
