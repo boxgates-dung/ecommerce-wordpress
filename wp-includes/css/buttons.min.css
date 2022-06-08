@@ -34,11 +34,11 @@
     padding: 0 12px;
 
     width: 100%;
-    background: #31d92f;
-    border-color: #add;
+    background: #0948b3;
+    border-color: #0948b3;
     box-shadow: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .wp-core-ui .button-group.button-small .button,
@@ -88,7 +88,7 @@
 .wp-core-ui .button.hover,
 .wp-core-ui .button:hover {
     background: #f0f0f1;
-    border-color: #28b740;
+    border-color: #0948b3;
     color: #0a4b78
 }
 
@@ -96,10 +96,10 @@
 .wp-core-ui .button.focus,
 .wp-core-ui .button:focus {
     background: #f6f7f7;
-    border-color: #3582c4;
+    border-color: #0948b3;
     color: #0a4b78;
-    box-shadow: 0 0 0 1px #3582c4;
-    outline: 2px solid transparent;
+    box-shadow: 0 0 0 1px #0948b3;
+    outline: 1px solid transparent;
     outline-offset: 0
 }
 
@@ -191,9 +191,9 @@
 .wp-core-ui .button-primary.hover,
 .wp-core-ui .button-primary:focus,
 .wp-core-ui .button-primary:hover {
-    background: #28b740;
-    border-color: #28b740;
-    color: #fff
+    background: #fff;
+    border-color: #0948b3;
+    color: #0948b3
 }
 
 .wp-core-ui .button-primary.focus,
@@ -201,16 +201,17 @@
     box-shadow: 0 0 0 1px #fff, 0 0 0 3px #2271b1
 }
 
+/* active bottom */
 .wp-core-ui .button-primary.active,
 .wp-core-ui .button-primary.active:focus,
 .wp-core-ui .button-primary.active:hover,
 .wp-core-ui .button-primary:active {
     width: 100%;
-    background: #31d92f;
-    border-color: #add;
+    background: #fff;
+    border-color: #0948b3;
     box-shadow: none;
-    color: #fff;
-    font-size: 18px;
+    color: #0948b3;
+    font-size: 16px;
 }
 
 .wp-core-ui .button-primary-disabled,

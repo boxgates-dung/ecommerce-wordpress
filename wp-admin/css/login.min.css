@@ -43,14 +43,14 @@ p {
 .login #login_error,
 .login .message,
 .login .success {
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 5px;
     padding: 13px;
     margin-left: 0;
     margin-bottom: 20px;
-    background-color: #cde9f6;
-    border: solid 1px #add;
-    color: #42749c;
+    background-color: #f1f9ff;
+    border: solid 1px #4f94d4;
+    color: #4a789d;
     word-wrap: break-word
 }
 
@@ -137,7 +137,7 @@ p {
     font-weight: 400;
     overflow: hidden;
     background: #fff;
-    border: 2px solid #68de7152
+    border: 0px solid #68de7152
 }
 
 .login form.shake {
@@ -246,10 +246,10 @@ p {
 }
 
 .login label {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     display: inline-block;
-    margin-bottom: 7px
+    margin-bottom: 10px
 }
 
 .login .forgetmenot label,
@@ -331,11 +331,11 @@ p {
 .login form .input,
 .login input[type=password],
 .login input[type=text] {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.33333333;
     width: 100%;
     border-width: .0625rem;
-    padding: .1875rem .3125rem;
+    padding: .1875rem .6125rem;
     margin: 0 6px 16px 0;
     min-height: 40px;
     max-height: none

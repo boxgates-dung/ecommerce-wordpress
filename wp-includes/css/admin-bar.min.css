@@ -36,11 +36,13 @@ html:lang(he-il) .rtl #wpadminbar * {
     cursor: default
 }
 
+/* Color nav bar */
 #wpadminbar .ab-empty-item,
 #wpadminbar a.ab-item,
 #wpadminbar>#wp-toolbar span.ab-label,
 #wpadminbar>#wp-toolbar span.noticon {
-    color: #f0f0f1
+    color: #222;
+
 }
 
 #wpadminbar #wp-admin-bar-my-sites a.ab-item,
@@ -88,7 +90,7 @@ html:lang(he-il) .rtl #wpadminbar * {
     font-weight: 400;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     line-height: 2.46153846;
-    height: 65px;
+    height: 58px;
     position: fixed;
     top: 0;
     left: 0;
@@ -96,7 +98,8 @@ html:lang(he-il) .rtl #wpadminbar * {
     min-width: 600px;
     z-index: 99999;
     background: #fff;
-    border-bottom: solid 1px #dee1e4;
+    /* border-bottom: solid 1px #dee1e4; */
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%), 0 1px 1px rgb(0 0 0 / 10%);
 }
 
 #wpadminbar .ab-sub-wrapper,
@@ -129,13 +132,14 @@ html:lang(he-il) .rtl #wpadminbar * {
 }
 
 #wpadminbar .quicklinks .ab-top-secondary>li {
-    float: right
+    float: right;
+    margin-right: 30px;
 }
 
 #wpadminbar .quicklinks .ab-empty-item,
 #wpadminbar .quicklinks a,
 #wpadminbar .shortlink-input {
-    height: 65px;
+    height: 58px;
     display: block;
     padding: 0 10px;
     margin: 0
@@ -158,18 +162,19 @@ html:lang(he-il) .rtl #wpadminbar * {
 }
 
 #wpadminbar .ab-top-menu>.menupop>.ab-sub-wrapper {
-    min-width: 100%
+    min-width: 100%;
+    padding-bottom: 9px;
 }
 
+/* Submenu user nav bar */
 #wpadminbar .ab-top-secondary .menupop .ab-sub-wrapper {
     right: 0;
     left: auto;
-    padding: 0px 20px;
     margin-right: 20px;
 }
 
 #wpadminbar .ab-submenu {
-    padding: 6px 0
+    padding: 9px 0
 }
 
 #wpadminbar .selected .shortlink-input {
@@ -189,10 +194,17 @@ html:lang(he-il) .rtl #wpadminbar * {
 #wpadminbar .quicklinks .menupop.hover ul li .ab-item,
 #wpadminbar .shortlink-input,
 #wpadminbar.nojs .quicklinks .menupop:hover ul li .ab-item {
-    line-height: 2;
+    /* line-height: 2; */
     height: 40px;
+    padding-right: 25px;
+    padding-left: 25px;
     white-space: nowrap;
-    min-width: 140px
+    min-width: 150px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 150px;
 }
 
 #wpadminbar .shortlink-input {
@@ -217,18 +229,21 @@ html:lang(he-il) .rtl #wpadminbar * {
     right: 100%
 }
 
+/* hover text tastbar */
 #wpadminbar .ab-top-menu>li.hover>.ab-item,
 #wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus,
 #wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item,
 #wpadminbar:not(.mobile) .ab-top-menu>li>.ab-item:focus {
-    background: #2c3338;
-    color: #72aee6
+    /* background: #2c3338; */
+    color: #000;
+    /* font-weight: 600; */
 }
 
+/* hover text bar left */
 #wpadminbar:not(.mobile)>#wp-toolbar a:focus span.ab-label,
 #wpadminbar:not(.mobile)>#wp-toolbar li:hover span.ab-label,
 #wpadminbar>#wp-toolbar li.hover span.ab-label {
-    color: #72aee6
+    color: #000
 }
 
 #wpadminbar .ab-icon,
@@ -278,6 +293,7 @@ html:lang(he-il) .rtl #wpadminbar * {
     color: #798796
 }
 
+/* Hover submenu navbar */
 #wpadminbar .quicklinks .ab-sub-wrapper .menupop.hover>a,
 #wpadminbar .quicklinks .menupop ul li a:focus,
 #wpadminbar .quicklinks .menupop ul li a:focus strong,
@@ -298,7 +314,8 @@ html:lang(he-il) .rtl #wpadminbar * {
 #wpadminbar li:hover .ab-item:before,
 #wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus,
 #wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover {
-    color: #72aee6
+    color: #222;
+    background-color: #ebebeb;
 }
 
 #wpadminbar.mobile .quicklinks .ab-icon:before,
@@ -354,7 +371,7 @@ html:lang(he-il) .rtl #wpadminbar * {
 
 #wpadminbar .quicklinks .menupop ul.ab-sub-secondary,
 #wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu {
-    background: #3c434a
+    background: #000
 }
 
 #wpadminbar .quicklinks .menupop .ab-sub-secondary>li .ab-item:focus a,
@@ -383,7 +400,7 @@ html:lang(he-il) .rtl #wpadminbar * {
 
 #wpadminbar ul li:last-child,
 #wpadminbar ul li:last-child .ab-item {
-    box-shadow: none
+    box-shadow: none;
 }
 
 #wpadminbar #wp-admin-bar-recovery-mode {
@@ -469,10 +486,15 @@ html:lang(he-il) .rtl #wpadminbar * {
 #wpadminbar #wp-admin-bar-user-info .display-name,
 #wpadminbar #wp-admin-bar-user-info .username {
     display: block;
-    color: #10a722;
+    color: #787c82;
     font-weight: 600;
     font-size: 16px;
-    text-transform: uppercase
+    text-transform: uppercase;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 150px;
 }
 
 #wpadminbar #wp-admin-bar-user-info .username {
@@ -482,16 +504,17 @@ html:lang(he-il) .rtl #wpadminbar * {
 
 #wpadminbar #wp-admin-bar-my-account.with-avatar>.ab-empty-item img,
 #wpadminbar #wp-admin-bar-my-account.with-avatar>a img {
-    width: auto;
-    height: 16px;
+    width: 34px;
+    height: 34px;
     padding: 0;
-    border: 1px solid #8c8f94;
+    border: 0px solid #8c8f94;
     background: #f0f0f1;
     line-height: 1.84615384;
     vertical-align: middle;
     margin: -4px 0 0 6px;
     float: none;
-    display: inline
+    display: inline;
+    border-radius: 50%;
 }
 
 #wpadminbar #wp-admin-bar-wp-logo>.ab-item .ab-icon {
