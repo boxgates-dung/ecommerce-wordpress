@@ -27,7 +27,7 @@
 
 #adminmenu {
     clear: left;
-    margin: 12px 0;
+    margin: 9px 0;
     padding: 0;
     list-style: none
 }
@@ -242,12 +242,14 @@
     box-shadow: 0 3px 5px rgba(0, 0, 0, .2)
 }
 
+/* hover menu bar */
 #adminmenu li.menu-top:hover,
 #adminmenu li.opensub>a.menu-top,
 #adminmenu li>a.menu-top:focus {
     position: relative;
-    background-color: #1d2327;
-    color: #72aee6
+    background-color: #c3c4c7;
+    color: #333;
+    border-radius: 5px;
 }
 
 .folded #adminmenu li.menu-top:hover,
@@ -261,7 +263,7 @@
 #adminmenu .wp-menu-arrow div,
 #adminmenu li.current a.menu-top,
 #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
-    background: #5cc12a;
+    background: #0948b3;
     color: #fff
 }
 
